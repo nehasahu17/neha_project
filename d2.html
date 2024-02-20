@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIT Bhopal Faculty Information</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .faculty-card {
+            display: flex;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .faculty-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-left: 15px;
+        }
+
+        .faculty-info {
+            flex-grow: 1;
+            margin-left: 15px;
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        #searchInput {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>VIT Bhopal Faculty Information</h1>
+    </header>
+
+    <section>
+        <input type="text" id="searchInput" placeholder="Search by name...">
+
+        <div class="faculty-card" data-name="Dr. John Doe">
+            <div class="faculty-info">
+                <h2>Dr. John Doe</h2>
+                <p>Professor of Computer Science</p>
+                <p>Email: john.doe@vitbhopal.ac.in</p>
+                <p>Office: Room 123, Science Building</p>
+            </div>
+            <img src="https://drive.google.com/file/d/1FPSQ3V-yIp0aH_G2zcA9X4viOhL5u-ma/view?usp=drive_link" alt="Dr. John Doe">
+        </div>
+
+        <div class="faculty-card" data-name="Prof. Jane Smith">
+            <div class="faculty-info">
+                <h2>Prof. Jane Smith</h2>
+                <p>Associate Professor of Electronics</p>
+                <p>Email: jane.smith@vitbhopal.ac.in</p>
+                <p>Office: Room 456, Electronics Department</p>
+            </div>
+            <img src="" alt="my photo">
+        </div>
+        <!-- Add more faculty cards as needed -->
+    </section>
+
+    <script>
+        document.getElementById('searchInput').addEventListener('input', function() {
+            const searchValue = this.value.toLowerCase();
+            const facultyCards = document.querySelectorAll('.faculty-card');
+
+            facultyCards.forEach(card => {
+                const facultyName = card.getAttribute('data-name').toLowerCase();
+                if (facultyName.includes(searchValue)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
+

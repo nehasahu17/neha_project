@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIT Bhopal Faculty Information</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .faculty-card {
+            display: flex;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .faculty-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-left: 15px;
+        }
+
+        .faculty-info {
+            flex-grow: 1;
+            margin-left: 15px;
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        #searchInput {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>VIT Bhopal Faculty Information</h1>
+    </header>
+
+    <section>
+        <input type="text" id="searchInput" placeholder="Search by name...">
+
+        <div class="faculty-card" data-name="Anand Motwani">
+            <div class="faculty-info">
+                <h3> Name of Faculty -  Dr. Anand Motwani</h3>
+                <p>  Name of Department - SCSE Department</p>
+                <p>        Designation  - Assistant Professor Grade 2</p>
+                <p>  School/Center Name  -  School of Computing Science and Engineering </p>
+                <p>Email: anand.motwani@vitbhopal.ac.in</p>
+                <p>   Languages - English , Hindi</p>
+                <p>Cabin Number - B-407</p>
+            </div>
+            </div>
+            <!--<img src="" alt="Neha">-->
+        <div class="faculty-card" data-name="Satyam Ravi">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. Satyam Ravi</h3>
+                <p>  Name of Department - SASL Department </p>
+                <p>        Designation  - Assistant Professor </p>
+                <p>  School/Center Name  -  School of Applied Science and Language </p>
+                <p>Email: satyam@vitbhopal.a.cin</p>
+                <p>   Languages - English , Hindi </p>
+                <p>Cabin Number - C-536</p>
+            </div>
+        </div>
+        <div class="faculty-card" data-name="Abhay Vidyarthi">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. Abhay Vidyarthi</h3>
+                <p>  Name of Department - SEEE Department </p>
+                <p>        Designation  - Assistant Professor(Senior) </p>
+                <p>  School/Center Name  -  School of Electrical and Electronics Engineering </p>
+                <p>Email: abhay.vidyarthi@vitbhopal.a.cin</p>
+                <p>   Languages - English , Hindi </p>
+                <p>Cabin Number - A-422(New Block)</p>
+            </div>
+        </div>
+        <div class="faculty-card" data-name="Neha Choubey">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. Neha Choubey</h3>
+                <p>  Name of Department - SASL Department </p>
+                <p>        Designation  - Assistant Professor </p>
+                <p>  School/Center Name  -  School of Applied Science and Language </p>
+                <p>Email: neha.choubey@vitbhopal.a.cin</p>
+                <p>   Languages - English , Hindi</p>
+                <p>Cabin Number - Cabin No. 2 Admission Office</p>
+            </div>
+        </div>
+        <div class="faculty-card" data-name="Anant Kant Shukla">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. Anant Kant Shukla</h3>
+                <p>  Name of Department - SASL Department </p>
+                <p>        Designation  - Assistant Professor </p>
+                <p>  School/Center Name  -  School of Applied Science and Language </p>
+                <p>Email: anantkant.shukla@vitbhopal.a.cin</p>
+                <p>   Languages - English , Hindi</p>
+                <p>Cabin Number - G-11</p>
+            </div>
+        </div>
+
+        
+            
+        </div>
+    <div class="faculty-card" data-name="Shiv Shankar Prasad Shukla">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. Shiv Shankar Prasad Shukla</h3>
+                <p>  Name of Department - SCSE Department </p>
+                <p>        Designation  - Assistant Professor </p>
+                <p>  School/Center Name  -  School of Computing Science and Engineering</p>
+                <p>Email: shivshankar.prasad@vitbhopal.ac.in</p>
+                <p>   Languages - English , Hindi</p>
+                <p>Cabin Number - A-409</p>
+            </div>
+        </div>
+        <div class="faculty-card" data-name="Hariharan R">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. Hariharan R</h3>
+                <p>  Name of Department - SCSE Department </p>
+                <p>        Designation  - Assistant Professor </p>
+                <p>  School/Center Name  -  School of Computing Science and Engineering</p>
+                <p>Email: hariharan.r@vitbhopal.ac.in</p>
+                <p>   Languages - English </p>
+                <p>Cabin Number - B-301</p>
+            </div>
+        </div>
+        <div class="faculty-card" data-name="Rajeev Saxena">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. Rajeev Saxena</h3>
+                <p>  Name of Department - SASL Department </p>
+                <p>        Designation  - Assistant Professor </p>
+                <p>  School/Center Name  -  School of Applied Science and Language </p>
+                <p>Email: rajeev.saxena@vitbhopal.ac.in</p>
+                <p>   Languages -  English , Hindi </p>
+                <p>Cabin Number - B-315</p>
+            </div>
+        </div>
+        <div class="faculty-card" data-name="Vinod Bhatt">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. Vinod Bhatt</h3>
+                <p>  Name of Department - SASL Department </p>
+                <p>        Designation  - Associate Professor </p>
+                <p>  School/Center Name  -  School of Applied Science and Language </p>
+                <p>Email: vinod.bhatt@vitbhopal.ac.in</p>
+                <p>   Languages - English , Hindi </p>
+                <p>Cabin Number - G-02</p>
+            </div>
+        </div>
+        <div class="faculty-card" data-name="Trapti Sharma">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. Trapti Sharma</h3>
+                <p>  Name of Department - SCSE Department </p>
+                <p>        Designation  - Assistant Professor Grade 1</p>
+                <p>  School/Center Name  -  School of Computing Science and Engineering </p>
+                <p>Email: traptisharma@vitbhopal.ac.in</p>
+                <p>   Languages - English ,  Hindi  </p>
+                <p>Cabin Number - C-526</p>
+            </div>
+        </div>
+        <div class="faculty-card" data-name="Jay Prakash Maurya">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. Jay Prakash Maurya </h3>
+                <p>  Name of Department - SCSE Department </p>
+                <p>        Designation  - Teaching Fellow</p>
+                <p>  School/Center Name  -  School of Computing Science and Engineering </p>
+                <p>Email: jay.prakash@vitbhopal.ac.in</p>
+                <p>   Languages - English , Hindi </p>
+                <p>Cabin Number - </p>
+            </div>
+        </div>
+        <div class="faculty-card" data-name="Bhumika Choksi">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. Bhumika Choksi </h3>
+                <p>  Name of Department - SASL Department </p>
+                <p>        Designation  - Assistant Professor</p>
+                <p>  School/Center Name  -  School of Applied Science and Language </p>
+                <p>Email: bhumika.choksi@vitbhopal.ac.in</p>
+                <p>   Languages - English , Hindi , Gujrati</p>
+                <p>Cabin Number - </p>
+            </div>
+        </div>
+        <div class="faculty-card" data-name="Amit Thakur">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. Amit Thakur </h3>
+                <p>  Name of Department - SCSE Department </p>
+                <p>        Designation  - Teaching Fellow</p>
+                <p>  School/Center Name  -  School of Computer Science and Engineering </p>
+                <p>Email : amitthakur@vitbhopal.ac.in</p>
+                <p>   Languages - English , Hindi </p>
+                <p>Cabin Number - </p>
+            </div>
+        </div>
+        <div class="faculty-card" data-name="Rabia Musheer">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. Rabia Musheer </h3>
+                <p>  Name of Department - SASL Department </p>
+                <p>        Designation  - Assistant Professor</p>
+                <p>  School/Center Name  -  School of Applied Science and Language </p>
+                <p>Email : rabia.musheer@vitbhopal.ac.in</p>
+                <p>   Languages - English , Hindi </p>
+                <p>Cabin Number - B-408</p>
+            </div>
+        </div>
+
+        <div class="faculty-card" data-name="Soma Saha">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. Soma Saha</h3>
+                <p>  Name of Department - SCSE Department </p>
+                <p>        Designation  - Assistant Professor Senior Grade 2</p>
+                <p>  School/Center Name  -  School of Computing Science and Engineering </p>
+                <p>Email: soma.saha@vitbhopal.ac.in</p>
+                <p>   Languages - English , Hindi , Bengali</p>
+                <p>Cabin Number - </p>
+            </div>
+        </div>
+        <div class="faculty-card" data-name="Humaira Fatima">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. Humaira Fatima</h3>
+                <p>  Name of Department - VITBS (VIT Business School )</p>
+                <p>        Designation  - Assistant Professor Grade 1</p>
+                <p>  School/Center Name  -  VIT Business School </p>
+                <p>Email: humaira.fatima@vitbhopal.ac.in</p>
+                <p>   Languages - English , Hindi </p>
+                <p>Cabin Number - </p>
+            </div>
+        </div>
+        <div class="faculty-card" data-name="Manisha Singh">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. Manisha Singh</h3>
+                <p>  Name of Department - VITBS (VIT Business School )</p>
+                <p>        Designation  - Assistant Professor </p>
+                <p>  School/Center Name  -  VIT Business School </p>
+                <p>Email: manisha.singh@vitbhopal.ac.in</p>
+                <p>   Languages - English , Hindi </p>
+                <p>Cabin Number - B-415</p>
+            </div>
+        </div>
+        <div class="faculty-card" data-name="Amit Kumar Singh">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. Amit Kumar Singh</h3>
+                <p>  Name of Department - SEEE Department </p>
+                <p>        Designation  - Assistant Professor Junior</p>
+                <p>  School/Center Name  -  School of Electrical and Electronics Engineering </p>
+                <p>Email: amit.singh@vitbhopal.ac.in</p>
+                <p>   Languages - English , Hindi</p>
+                <p>Cabin Number -  C-502</p>
+            </div>
+        </div>
+        <div class="faculty-card" data-name="Deep Chandra Upadhyay">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. Deep Chandra Upadhyay</h3>
+                <p>  Name of Department - SEEE Department </p>
+                <p>        Designation  - Assistant Professor Grade 1 </p>
+                <p>  School/Center Name  -  School of Electrical and Electronics Engineering </p>
+                <p>Email: deepchandra.Upadhyay2022@vitbhopal.ac.in</p>
+                <p>   Languages - English , Hindi</p>
+                <p>Cabin Number -  </p>
+            </div>
+        </div>
+        <div class="faculty-card" data-name="Vishnuvarthanan">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. Vishnuvarthanan</h3>
+                <p>  Name of Department - SCSE Department </p>
+                <p>        Designation  - Assistant Professor Grade 2</p>
+                <p>  School/Center Name  -  School of Computing Science and Engineering </p>
+                <p>Email: vishnuvarthanan@vitbhopal.ac.in</p>
+                <p>   Languages - English  </p>
+                <p>Cabin Number - </p>
+            </div>
+        </div>
+        <div class="faculty-card" data-name="A.V.R Mayuri">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr.  A.V.R Mayuri</h3>
+                <p>  Name of Department - SCSE Department </p>
+                <p>        Designation  - Assistant Professor (Senior) </p>
+                <p>  School/Center Name  -  School of Computing Science and Engineering </p>
+                <p>Email: mayuri.avr@vitbhopal.ac.in</p>  
+                <p>   Languages - English  </p>
+                <p>Cabin Number - B-313 </p>
+            </div>
+        </div>
+    </div>
+    <div class="faculty-card" data-name="Anju Shukla">
+        <div class="faculty-info">
+            <h3>  Name of Faculty - Dr. Anju Shukla  </h3>
+            <p>  Name of Department - SCSE Department </p>
+            <p>        Designation  - Assistant Professor Grade 1  </p>
+            <p>  School/Center Name  -  School of Computing Science and Engineering </p>
+            <p>Email: anju.shukla@vitbhopal.ac.in</p>  
+            <p>   Languages - English , Hindi  </p>
+            <p>Cabin Number - A-510 </p>
+        </div>
+    </div>
+        <div class="faculty-card" data-name="Manoj Kumar">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. Manoj Kumar</h3>
+                <p>  Name of Department - SCSE Department </p>
+                <p>        Designation  - Assistant Professor </p>
+                <p>  School/Center Name  -  School of Computing Science and Engineering </p>
+                <p>Email: manojkumar@vitbhopal.ac.in</p>
+                <p>   Languages - English  </p>
+                <p>Cabin Number - A-511 </p>
+            </div>
+        </div>
+        <div class="faculty-card" data-name="Santosh Kumar Tripathy">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. Santosh Kumar Tripathy </h3>
+                <p>  Name of Department - SCSE Department </p>
+                <p>        Designation  - Assistant Professor </p>
+                <p>  School/Center Name  -  School of Computing Science and Engineering </p>
+                <p>Email: santoshkumar.tripathy@vitbhopal.ac.in</p>
+                <p>   Languages - English , Hindi  </p>
+                <p>Cabin Number - C-513 </p>
+            </div>
+        </div>
+        <div class="faculty-card" data-name="Nikhil Pateria">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. Nikhil Pateria </h3>
+                <p>  Name of Department - SCSE Department </p>
+                <p>        Designation  - Teaching Fellow  </p>
+                <p>  School/Center Name  -  School of Computing Science and Engineering </p>
+                <p>Email: nikhil.pateria@vitbhopal.ac.in</p>
+                <p>   Languages - English , Hindi  </p>
+                <p>Cabin Number -  </p>
+            </div>
+        </div>
+        <div class="faculty-card" data-name="C. P. Koushik">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. C. P. Koushik </h3>
+                <p>  Name of Department - SCSE Department </p>
+                <p>        Designation  - Assistant Professor Grade 1  </p>
+                <p>  School/Center Name  -  School of Computing Science and Engineering </p>
+                <p>Email: koushik.cp@vitbhopal.ac.in</p>
+                <p>   Languages - English </p>
+                <p>Cabin Number - B-308 </p>
+            </div>
+        </div>
+        <div class="faculty-card" data-name="PUSHPINDER SINGH PATHEJA">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. PUSHPINDER SINGH PATHEJA </h3>
+                <p>  Name of Department - SCSE Department </p>
+                <p>        Designation  - Assistant Professor  </p>
+                <p>  School/Center Name  -  School of Computing Science and Engineering </p>
+                <p>Email: koushik.cp@vitbhopal.ac.in</p>
+                <p>   Languages - English ,Hindi , Punjabi  </p>
+                <p>Cabin Number - G-09 </p>
+            </div>
+        </div>
+        <div class="faculty-card" data-name="Santosh Kumar Sahoo ">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. Santosh Kumar Sahoo </h3>
+                <p>  Name of Department - SCSE Department </p>
+                <p>        Designation  - Assistant Professor Senior Grade 2</p>
+                <p>  School/Center Name  -  School of Computing Science and Engineering </p>
+                <p>Email: santoshkumarsahoo@vitbhopal.ac.in</p>
+                <p>   Languages - English , Hindi  </p>
+                <p>Cabin Number -  </p>
+            </div>
+        </div>
+        <div class="faculty-card" data-name="Anita Yadav">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. Anita Yadav</h3>
+                <p>  Name of Department - SASL Department </p>
+                <p>        Designation  - Assistant Professor Grade 2</p>
+                <p>  School/Center Name  -  School of Applied Science and language </p>
+                <p>Email: anita.yadav@vitbhopal.ac.in</p>
+                <p>   Languages - English , Hindi</p>
+                <p>Cabin Number - A-315</p>
+            </div>
+        </div>
+        <div class="faculty-card" data-name="Sumit Mittal">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. Sumit Mittal</h3>
+                <p>  Name of Department - SASL Department </p>
+                <p>        Designation  - Assistant Professor </p>
+                <p>  School/Center Name  -  School of Applied Science and language </p>
+                <p>Email: sumit.mittal@vitbhopal.ac.in</p>
+                <p>   Languages - English , Hindi</p>
+                <p>Cabin Number - B-304</p>
+            </div>
+        </div>
+    </div>
+    <div class="faculty-card" data-name="Akshara Makrariya">
+        <div class="faculty-info">
+            <h3>  Name of Faculty - Dr. Akshara Makrariya</h3>
+            <p>  Name of Department - SASL Department </p>
+            <p>        Designation  - Assistant Professor(Senior) </p>
+            <p>  School/Center Name  -  School of Applied Science and language </p>
+            <p>Email: akshara.makrariya@vitbhopal.ac.in</p>
+            <p>   Languages - English , Hindi</p>
+            <p>Cabin Number - A-302</p>
+        </div>
+    </div>
+        <div class="faculty-card" data-name="Pushpdant Jain">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. Pushpdant Jain</h3>
+                <p>  Name of Department - SMEC Department </p>
+                <p>        Designation  - Assistant Professor </p>
+                <p>  School/Center Name  - School of Mechanical Engineering</p>
+                <p>Email: pushpdant.jain@vitbhopal.ac.in</p>
+                <p>   Languages - English , Hindi</p>
+                <p>Cabin Number - A-412</p>
+            </div>
+        </div>
+        <div class="faculty-card" data-name="Dev Brat Gupta">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. Dev Brat Gupta</h3>
+                <p>  Name of Department - SASL Department </p>
+                <p>        Designation  - Assistant Professor Grade 1</p>
+                <p>  School/Center Name  -  School of Applied Science and language </p>
+                <p>Email: devbrat.gupta@vitbhopal.ac.in</p>
+                <p>   Languages - English , Hindi</p>
+                <p>Cabin Number - G-07</p>
+            </div>
+        </div>
+        <div class="faculty-card" data-name="Benevatho Jaison A">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. Benevatho Jaison A</h3>
+                <p>  Name of Department - SASL Department </p>
+                <p>        Designation  - Assistant Professor </p>
+                <p>  School/Center Name  -  School of Applied Science and language </p>
+                <p>Email: benevatho.jaison@vitbhopal.ac.in</p>
+                <p>   Languages - English </p>
+                <p>Cabin Number - A-401</p>
+            </div>
+        </div>
+        <div class="faculty-card" data-name="Manoj Acharya">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. Manoj Acharya</h3>
+                <p>  Name of Department - SASL Department </p>
+                <p>        Designation  - Assistant Professor </p>
+                <p>  School/Center Name  -  School of Applied Science and language </p>
+                <p>Email: manoj.acharya@vitbhopal.ac.in</p>
+                <p>   Languages - English , Hindi</p>
+                <p>Cabin Number - G-06</p>
+            </div>
+        </div>
+        <div class="faculty-card" data-name="Manisha Jain">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. Manisha Jain</h3>
+                <p>  Name of Department - SASL Department </p>
+                <p>        Designation  - Assistant Professor </p>
+                <p>  School/Center Name  -  School of Applied Science and language </p>
+                <p>Email: manisha.jain@vitbhopal.ac.in</p>
+                <p>   Languages - English , Hindi</p>
+                <p>Cabin Number - G-04</p>
+            </div>
+        </div>
+        <div class="faculty-card" data-name="Soumya Shankar Ghosh">
+            <div class="faculty-info">
+                <h3>  Name of Faculty - Dr. Soumya Shankar Ghosh</h3>
+                <p>  Name of Department - SASL Department </p>
+                <p>        Designation  - Soft Skills Trainer</p>
+                <p>  School/Center Name  -  School of Applied Science and language </p>
+                <p>Email: soumya.shankar@vitbhopal.ac.in</p>
+                <p>   Languages - English , Hindi ,Bengali</p>
+                <p>Cabin Number - C-517</p>
+            </div>
+        </div>
+
+        <!-- Add more faculty cards as needed -->
+    </section>
+
+    <script>
+        document.getElementById('searchInput').addEventListener('input', function() {
+            const searchValue = this.value.toLowerCase();
+            const facultyCards = document.querySelectorAll('.faculty-card');
+
+            facultyCards.forEach(card => {
+                const facultyName = card.getAttribute('data-name').toLowerCase();
+                if (facultyName.includes(searchValue)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
